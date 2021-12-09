@@ -2,6 +2,11 @@ body {
   color: #2a2a2a;
   font-family: "Be Vietnam Pro", sans-serif;
 }
+*{margin: 0; 
+ box-sizing:none;
+
+}
+
 
 p {
   line-height: 150%;
@@ -14,6 +19,51 @@ h3,
 h4 {
   font-family: "Alata", sans-serif;
   letter-spacing: 2px;
+}
+
+a{
+  text-decoration: none;
+
+
+}
+
+.container{
+display: flex;
+margin: 0 auto;
+padding: 0 10px;
+width: 1000px;
+
+}
+
+.container-meny{
+  gap: 30px;
+  align-items: center;
+}
+
+.header {
+ width: 100%;
+ height: 50px;
+ display: flex;
+}
+
+.meny-item {
+  font-family: "Alata", sans-serif;
+  font-size: 20px;
+  color:#2a2a2a;
+  
+
+  
+}
+
+
+.meny-item:hover {
+ text-decoration: underline;
+ 
+}
+
+
+.logo{
+  margin-right: auto;
 }
 
 .footer {
