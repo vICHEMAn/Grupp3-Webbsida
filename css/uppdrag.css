@@ -7,6 +7,10 @@
   /* grid-template-rows: 800px auto; */
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* HEADER  */
 
 .uppdrag-header-container {
@@ -86,6 +90,142 @@
   gap: 80px;
 }
 
+/* ONE - MAIN CONTENT */
+
+.uppdrag-one-header-container {
+  grid-column: 1 / 4;
+  height: 600px;
+}
+
+.uppdrag-one-header-container img {
+  width: 100%;
+  height: 600px;
+
+  vertical-align: middle;
+}
+
+.uppdrag-one-main-container {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.uppdrag-one-main-content-1 {
+  width: 400px;
+  padding-top: 40px;
+}
+
+.uppdrag-one-main-content-1 h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.uppdrag-one-main-content-1 p {
+  margin-bottom: 40px;
+}
+
+.uppdrag-one-main-content-2 {
+  width: 1000px;
+  padding-top: 40px;
+}
+
+.uppdrag-one-main-container section {
+  /* background-color: wheat; */
+  padding: 50px;
+}
+
+.uppdrag-one-main-container h2 {
+  font-size: 45px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.uppdrag-one-main-content-2 p {
+  font-size: 17px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  line-height: 160%;
+  margin-bottom: 40px;
+}
+
+.uppdrag-one-photo {
+  grid-column: 1 / 4;
+  display: grid;
+}
+
+/* ONE - PHOTO */
+
+.uppdrag-one-photo {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 600px);
+
+  background-color: plum;
+}
+
+[class*="photo"] img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  /* max-width: 100% */
+}
+
+.photo-1 {
+  grid-column: 1 / 7;
+}
+
+.photo-2 {
+  grid-column: 1 / 4;
+}
+
+.photo-3 {
+  grid-column: 4 / 7;
+  background-color: #fea357;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 60px;
+  row-gap: 70px;
+  color: rgb(255, 255, 255);
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.result-1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  width: 100%;
+}
+
+.result-2 {
+  width: 50%;
+  text-align: center;
+}
+
+.result-2 span {
+  background-color: #fbc854;
+}
+
+.result-3 p {
+  font-style: italic;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.photo-4 {
+  grid-column: 1 / 3;
+}
+
+.photo-5 {
+  grid-column: 3 / 5;
+}
+
+.photo-6 {
+  grid-column: 5 / 7;
+}
+
 /* MAIN NAVIGATION */
 
 .uppdrag-nav {
@@ -112,6 +252,10 @@
   /* padding: 30px; */
   justify-content: space-between;
   row-gap: 80px;
+}
+
+.uppdrag p {
+  font-size: 13px;
 }
 
 .uppdrag section {
@@ -201,10 +345,15 @@
   width: 70%;
 }
 
-.contact section h1 {
-  font-size: 50px;
+.contact section h2 {
+  font-size: 40px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+.contact p {
+  font-size: 15px;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .contact-button {
