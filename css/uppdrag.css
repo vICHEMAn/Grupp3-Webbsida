@@ -1,18 +1,19 @@
 .uppdrag-container {
-  background-color: rgb(210, 105, 30, 0.4);
+  /* background-color: rgb(210, 105, 30, 0.4); */
   margin: auto;
 
   display: grid;
   grid-template-columns: 1fr 1500px 1fr;
-  grid-template-rows: 800px auto;
+  /* grid-template-rows: 800px auto; */
 }
 
 /* HEADER  */
 
-.uppdrag-header {
-  background-color: rgb(210, 105, 30);
+.uppdrag-header-container {
+  /* background-color: rgb(210, 105, 30); */
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  height: 800px;
 }
 
 .uppdrag-header-content {
@@ -27,8 +28,12 @@
 .header-img {
   grid-column: 4 / 12;
   grid-row: 4 / 16;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   z-index: 2;
+}
+
+.header-img img {
+  width: 100%;
 }
 
 .header-grey {
@@ -63,12 +68,13 @@
 
 /* MAIN CONTENT */
 
-.main-container {
+.main-content-container {
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  /* grid-row: 2 / 3; */
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 50px 150px auto auto 500px;
+  /* grid-template-rows: 50px 150px auto auto 500px; */
+  grid-template-rows: 50px 150px auto;
 }
 
 .main-nav-container {
@@ -96,31 +102,41 @@
   border-bottom: 3px solid grey;
 }
 
-/* UPPDRAG */
+/* UPPDRAG WEBB */
 
 .uppdrag {
   grid-column: 1 / 7;
   display: flex;
   flex-flow: row wrap;
-  gap: 50px;
-  padding: 10px;
+  /* gap: 50px; */
+  /* padding: 30px; */
+  justify-content: space-between;
+  row-gap: 80px;
 }
 
 .uppdrag section {
-  height: 500px;
-  flex-grow: 1;
+  height: 600px;
+  flex-grow: 0;
   width: 443px;
-  border: 1px solid grey;
-}
-
-.uppdrag-app {
-  background-color: lightpink;
-  grid-row: 4 / 5;
+  /* border: 1px solid grey; */
 }
 
 .uppdrag-webb {
-  background-color: lightsalmon;
   grid-row: 3 / 4;
+}
+
+/* UPPDRAG APP */
+
+.uppdrag-app-container {
+  background-color: #f8f6f2;
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1500px 1fr;
+  padding: 80px 0;
+}
+
+.uppdrag-app {
+  grid-column: 2 / 3;
 }
 
 /* UPPDRAG ITEMS */
@@ -128,40 +144,61 @@
 .uppdrag-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.uppdrag-img {
-  background-color: lightseagreen;
-  height: 20px;
+.uppdrag-item-img {
+  /* background-color: lightseagreen; */
+  flex-basis: 290px;
+}
+
+.uppdrag-item-img img {
+  width: 100%;
+  height: 300px;
+}
+
+.uppdrag-item-text {
+  flex-basis: 250px;
 }
 
 .uppdrag-sort {
-  background-color: lightskyblue;
   height: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-style: bold;
+}
+
+.uppdrag-sort h4 span {
+  background-color: #fea357;
+  padding: 0 10px;
 }
 
 .uppdrag-name {
-  background-color: lime;
-  height: 20px;
+  height: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .uppdrag-text {
-  background-color: mediumspringgreen;
-  height: 20px;
+  height: 160px;
+  padding: 10px;
 }
 
 /* CONTACT */
 
-.contact {
-  grid-column: 2 / 6;
-  grid-row: 5 / 6;
+.contact-container {
+  /* background-color: greenyellow; */
+  grid-column: 2 / 3;
   display: flex;
+  height: 600px;
   align-items: center;
+  justify-content: center;
 }
 
-.contact section {
-  background-color: linen;
+.contact {
   height: 300px;
+  width: 70%;
 }
 
 .contact section h1 {
@@ -177,11 +214,15 @@
 .contact-button button {
   margin-top: 50px;
   color: #2a2a2a;
+  background-color: rgb(255, 255, 255);
   height: 60px;
   width: 250px;
-  align-self: flex-end;
   border: 3px solid #74d6c9;
-  background-color: none;
+  /* background-color: none; */
+}
+
+.contact-button button:hover {
+  background-color: #74d6c9;
 }
 
 /* MEDIA QUERIES */
@@ -192,8 +233,19 @@
       grid-template-columns: 1fr 1100px 1fr;
     }
 
+    .uppdrag-app-container {
+      grid-template-columns: 1fr 1100px 1fr;
+    }
+
     .header-grey {
       grid-row: 6 / 16;
+    }
+
+    .uppdrag section {
+      height: 500px;
+      flex-grow: 0;
+      width: 1000px;
+      border: 1px solid grey;
     }
 
 
