@@ -1,0 +1,299 @@
+/*
+iMac DESKTOP >1500px
+--------------------------
+BREDA DESKTOP 1500-1200px
+MINDRE DESKTOP 1200-960px
+TABLETS 960-768px
+MOBILE <768px
+ */
+
+/* 
+--------------------------
+ BREDA DESKTOP 1500-1200px
+ --------------------------
+ */
+
+@media (max-width: 1500px) {
+  /* MAIN WIDTH */
+  .uppdrag-container {
+    grid-template-columns: 1fr 95% 1fr;
+  }
+
+  /* HEADER */
+  .uppdrag-header-container {
+    height: 640px;
+  }
+
+  .header-grey {
+    padding: 30px 30px;
+  }
+  .header-grey h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .header-grey p {
+    font-size: 14px;
+  }
+
+  /* UPPDRAG SECTION AND IMG */
+
+  .uppdrag-item-img img {
+    height: 250px;
+  }
+
+  /* APP WIDTH */
+  .uppdrag-app-container {
+    grid-template-columns: 1fr 95% 1fr;
+  }
+}
+
+/* 
+--------------------------
+ MINDRE DESKTOP 1200-960px
+ --------------------------
+ */
+
+@media (max-width: 1200px) {
+  /* MAIN WIDTH */
+
+  .main-content-container {
+    grid-template-rows: 50px 80px auto;
+  }
+
+  /* HEADER */
+  .uppdrag-header-container {
+    height: 520px;
+  }
+
+  .header-grey h1 {
+    font-size: 30px;
+  }
+  .header-grey p {
+    font-size: 13px;
+  }
+
+  /* UPPDRAG SECTION AND IMG */
+
+  .uppdrag {
+    row-gap: 100px;
+  }
+
+  .uppdrag section {
+    width: 48%;
+  }
+  .uppdrag-item section {
+    width: 100%;
+  }
+  .uppdrag-item-img img {
+    height: 300px;
+  }
+
+  .uppdrag-item-text h2 {
+    font-size: 30px;
+  }
+
+  .uppdrag-item-text p {
+    font-size: 16px;
+  }
+
+  /* APP  */
+  .uppdrag-app-container {
+    margin-top: 50px;
+  }
+
+  /* CONTACT */
+  .contact-container {
+    height: 500px;
+  }
+}
+
+/* 
+--------------------------
+ TABLETS 960-768px
+ --------------------------
+ */
+
+@media (max-width: 960px) {
+  /* MAIN WIDTH */
+
+  /* HEADER */
+  .uppdrag-header-container {
+    height: 520px;
+  }
+
+  .header-grey p {
+    font-size: 11px;
+  }
+
+  .circle {
+    height: 140px;
+    width: 140px;
+  }
+
+  /* UPPDRAG SECTION AND IMG */
+  .uppdrag section {
+    width: 100%;
+    height: 300px;
+  }
+
+  .uppdrag section:nth-child(6n) {
+    margin-bottom: 35px;
+  }
+
+  .uppdrag {
+    justify-content: flex-start;
+  }
+
+  .uppdrag-item {
+    flex-direction: row;
+  }
+
+  .uppdrag-item-img img {
+    object-fit: cover;
+  }
+
+  .uppdrag-item-text {
+    margin-left: 30px;
+  }
+
+  .uppdrag-item-text {
+    padding-top: 10px;
+    margin-top: 0;
+  }
+
+  /* APP WIDTH */
+
+  /* CONTACT */
+  .contact-container {
+    height: 400px;
+  }
+
+  .contact section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .contact section {
+    align-self: center;
+  }
+}
+
+/* 
+--------------------------
+ MOBILE <768px
+ --------------------------
+ */
+
+@media (max-width: 768px) {
+  /* MAIN WIDTH */
+
+  /* HEADER */
+
+  .uppdrag-header-container {
+    height: auto;
+    margin: 50px 0;
+  }
+
+  .main-content-container {
+    margin-top: 40px;
+  }
+
+  .uppdrag-header-content {
+    display: flex;
+    height: 100%;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .header-grey {
+    padding: 23px 30px;
+  }
+  .header-grey h1 {
+    font-size: 35px;
+  }
+  .header-grey p {
+    font-size: 16px;
+  }
+
+  /* UPPDRAG SECTION AND IMG */
+
+  .uppdrag {
+    justify-content: center;
+    row-gap: 80px;
+  }
+
+  .uppdrag section {
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+  }
+
+  .uppdrag-item {
+    flex-direction: column;
+  }
+
+  .uppdrag-item-img img {
+    max-height: 360px;
+  }
+
+  .uppdrag h2 {
+    font-size: 30px;
+  }
+
+  .uppdrag p {
+    font-size: 18px;
+  }
+
+  .uppdrag-item-text {
+    padding: 20px 30px 0 30px;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .uppdrag section:nth-child(6n) {
+    margin-bottom: 12px;
+  }
+
+  /* APP WIDTH */
+
+  /* CONTACT */
+  .contact-container {
+    height: 600px;
+  }
+
+  .contact section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .contact p {
+    font-size: 13px;
+  }
+
+  .contact section {
+    align-self: center;
+  }
+
+  /* NAV */
+  .uppdrag-nav {
+    font-size: 25px;
+  }
+
+  .main-content-container {
+    grid-template-rows: auto 6em auto;
+  }
+
+  .main-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    row-gap: 20px;
+  }
+}
