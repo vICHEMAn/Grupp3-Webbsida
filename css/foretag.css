@@ -90,7 +90,7 @@ body {
     display: grid;
     grid-template-columns: repeat(12,1fr);
     column-gap: 2%;
-    row-gap: 20px;
+    /*row-gap: 20px;*/
 }
 
 
@@ -99,6 +99,7 @@ body {
    height: 450px;
    grid-column-start: 4;
    grid-column-end: 6;
+   padding-top: 20px;
 }
 
 .eve {
@@ -106,6 +107,7 @@ body {
     height: 450px;
     grid-column-start: 7;
 	grid-column-end: 9;
+    padding-top: 20px;
 }
 
 .mattias {
@@ -113,6 +115,7 @@ body {
    height: 450px;
    grid-column-start: 4;
    grid-column-end: 6;
+   padding-top: 20px;
 }
 
 .victor {
@@ -120,6 +123,7 @@ body {
     height: 450px;
     grid-column-start: 7;
 	grid-column-end: 9;
+    padding-top: 20px;
 }
 
 .space-1 {
@@ -145,6 +149,18 @@ body {
 .bild-text-2 {
     height:50px;
     text-align: center;
+    grid-column-start: 7;
+    grid-column-end: 9;
+}
+.space-3{
+    text-align: center;
+    text-decoration: underline;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+.space-4{
+    text-align: center;
+    text-decoration: underline;
     grid-column-start: 7;
     grid-column-end: 9;
 }
