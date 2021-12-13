@@ -1,29 +1,29 @@
 .uppdrag-container {
-  /* background-color: rgb(210, 105, 30, 0.4); */
   margin: auto;
 
   display: grid;
   grid-template-columns: 1fr 1500px 1fr;
-  /* grid-template-rows: 800px auto; */
 }
 
 * {
   box-sizing: border-box;
 }
 
+.padding {
+  padding: 0 15px;
+}
+
 /* HEADER  */
 
 .uppdrag-header-container {
-  /* background-color: rgb(210, 105, 30); */
   grid-column: 2 / 3;
-  grid-row: 1 / 2;
   height: 800px;
 }
 
 .uppdrag-header-content {
   display: grid;
   grid-template-columns: repeat(26, 1fr);
-  grid-template-rows: repeat(20, 40px);
+  grid-template-rows: repeat(20, 1fr);
   height: 100%;
 }
 
@@ -32,12 +32,13 @@
 .header-img {
   grid-column: 4 / 12;
   grid-row: 4 / 16;
-  /* background-color: lightgrey; */
   z-index: 2;
 }
 
 .header-img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .header-grey {
@@ -45,8 +46,7 @@
   grid-row: 6 / 14;
   background-color: #f4f4f4;
   z-index: 3;
-
-  padding: 40px;
+  padding: 40px 30px;
 }
 
 .header-grey h1 {
@@ -55,7 +55,11 @@
   text-align: center;
 }
 
-.header-blue {
+.header-grey p {
+  font-size: 16px;
+}
+
+.header-circle {
   grid-column: 11 / 15;
   grid-row: 13 / 18;
   z-index: 1;
@@ -74,11 +78,9 @@
 
 .main-content-container {
   grid-column: 2 / 3;
-  /* grid-row: 2 / 3; */
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /* grid-template-rows: 50px 150px auto auto 500px; */
-  grid-template-rows: 50px 150px auto;
+  grid-template-rows: 50px 8em auto;
 }
 
 .main-nav-container {
@@ -90,147 +92,11 @@
   gap: 80px;
 }
 
-/* ONE - MAIN CONTENT */
-
-.uppdrag-one-header-container {
-  grid-column: 1 / 4;
-  height: 600px;
-}
-
-.uppdrag-one-header-container img {
-  width: 100%;
-  height: 600px;
-
-  vertical-align: middle;
-}
-
-.uppdrag-one-main-container {
-  grid-column: 2 / 3;
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-}
-
-.uppdrag-one-main-content-1 {
-  width: 400px;
-  padding-top: 40px;
-}
-
-.uppdrag-one-main-content-1 h4 {
-  text-transform: uppercase;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.uppdrag-one-main-content-1 p {
-  margin-bottom: 40px;
-}
-
-.uppdrag-one-main-content-2 {
-  width: 1000px;
-  padding-top: 40px;
-}
-
-.uppdrag-one-main-container section {
-  /* background-color: wheat; */
-  padding: 50px;
-}
-
-.uppdrag-one-main-container h2 {
-  font-size: 45px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
-
-.uppdrag-one-main-content-2 p {
-  font-size: 17px;
-  font-family: "Be Vietnam Pro", sans-serif;
-  line-height: 160%;
-  margin-bottom: 40px;
-}
-
-.uppdrag-one-photo {
-  grid-column: 1 / 4;
-  display: grid;
-}
-
-/* ONE - PHOTO */
-
-.uppdrag-one-photo {
-  grid-column: 1 / 4;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 600px);
-
-  background-color: plum;
-}
-
-[class*="photo"] img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  /* max-width: 100% */
-}
-
-.photo-1 {
-  grid-column: 1 / 7;
-}
-
-.photo-2 {
-  grid-column: 1 / 4;
-}
-
-.photo-3 {
-  grid-column: 4 / 7;
-  background-color: #fea357;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 60px;
-  row-gap: 70px;
-  color: rgb(255, 255, 255);
-  align-content: flex-start;
-  justify-content: space-between;
-}
-
-.result-1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 30px;
-  width: 100%;
-}
-
-.result-2 {
-  width: 50%;
-  text-align: center;
-}
-
-.result-2 span {
-  background-color: #fbc854;
-}
-
-.result-3 p {
-  font-style: italic;
-  font-size: 15px;
-  margin-bottom: 20px;
-}
-
-.photo-4 {
-  grid-column: 1 / 3;
-}
-
-.photo-5 {
-  grid-column: 3 / 5;
-}
-
-.photo-6 {
-  grid-column: 5 / 7;
-}
-
 /* MAIN NAVIGATION */
 
-.uppdrag-nav {
+.uppdrag-nav a {
   font-family: "Alata", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
 }
 
@@ -248,21 +114,21 @@
   grid-column: 1 / 7;
   display: flex;
   flex-flow: row wrap;
-  /* gap: 50px; */
-  /* padding: 30px; */
   justify-content: space-between;
   row-gap: 80px;
 }
 
 .uppdrag p {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .uppdrag section {
   height: 600px;
-  flex-grow: 0;
-  width: 443px;
-  /* border: 1px solid grey; */
+  width: 30%;
+}
+
+.uppdrag-item section {
+  width: 100%;
 }
 
 .uppdrag-webb {
@@ -277,6 +143,7 @@
   display: grid;
   grid-template-columns: 1fr 1500px 1fr;
   padding: 80px 0;
+  margin-top: 30px;
 }
 
 .uppdrag-app {
@@ -291,18 +158,14 @@
   justify-content: space-between;
 }
 
-.uppdrag-item-img {
-  /* background-color: lightseagreen; */
-  flex-basis: 290px;
-}
-
 .uppdrag-item-img img {
   width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 
 .uppdrag-item-text {
-  flex-basis: 250px;
+  margin-top: 50px;
 }
 
 .uppdrag-sort {
@@ -318,21 +181,19 @@
 }
 
 .uppdrag-name {
-  height: 40px;
+  height: auto;
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .uppdrag-text {
-  height: 160px;
   padding: 10px;
 }
 
 /* CONTACT */
 
 .contact-container {
-  /* background-color: greenyellow; */
   grid-column: 2 / 3;
   display: flex;
   height: 600px;
@@ -341,7 +202,7 @@
 }
 
 .contact {
-  height: 300px;
+  height: auto;
   width: 70%;
 }
 
@@ -365,57 +226,9 @@
   color: #2a2a2a;
   background-color: rgb(255, 255, 255);
   height: 60px;
-  width: 250px;
   border: 3px solid #74d6c9;
-  /* background-color: none; */
 }
 
 .contact-button button:hover {
   background-color: #74d6c9;
 }
-
-/* MEDIA QUERIES */
-
-/* @media screen and (max-width: 1600px) {
-    .uppdrag-container {
-      background-color: lightgreen;
-      grid-template-columns: 1fr 1100px 1fr;
-    }
-
-    .uppdrag-app-container {
-      grid-template-columns: 1fr 1100px 1fr;
-    }
-
-    .header-grey {
-      grid-row: 6 / 16;
-    }
-
-    .uppdrag section {
-      height: 500px;
-      flex-grow: 0;
-      width: 1000px;
-      border: 1px solid grey;
-    }
-
-
-
-    @media screen and (max-width: 1200px) {
-      .uppdrag-container {
-        background-color: lightgreen;
-        grid-template-columns: 1fr 900px 1fr;
-      }
-  
-
-
-    @media screen and (max-width: 960px) {
-      .uppdrag-container {
-        background-color: lightseagreen;
-        grid-template-columns: 1fr 800px 1fr;
-      }
-
-
-      @media screen and (max-width: 768px) {
-        .uppdrag-container {
-          background-color: lightseagreen;
-          grid-template-columns: 1fr 600px 1fr;
-        } */
