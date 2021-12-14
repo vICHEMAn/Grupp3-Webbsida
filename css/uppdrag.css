@@ -1,0 +1,234 @@
+.uppdrag-container {
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1500px 1fr;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.padding {
+  padding: 0 15px;
+}
+
+/* HEADER  */
+
+.uppdrag-header-container {
+  grid-column: 2 / 3;
+  height: 800px;
+}
+
+.uppdrag-header-content {
+  display: grid;
+  grid-template-columns: repeat(26, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  height: 100%;
+}
+
+/* HEADER FORMS */
+
+.header-img {
+  grid-column: 4 / 12;
+  grid-row: 4 / 16;
+  z-index: 2;
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-grey {
+  grid-column: 11 / 24;
+  grid-row: 6 / 14;
+  background-color: #f4f4f4;
+  z-index: 3;
+  padding: 40px 30px;
+}
+
+.header-grey h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.header-grey p {
+  font-size: 16px;
+}
+
+.header-circle {
+  grid-column: 11 / 15;
+  grid-row: 13 / 18;
+  z-index: 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.circle {
+  background: #74d6c9;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+
+/* MAIN CONTENT */
+
+.main-content-container {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 50px 8em auto;
+}
+
+.main-nav-container {
+  grid-column: 2 / 6;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: row nowrap;
+  gap: 80px;
+}
+
+/* MAIN NAVIGATION */
+
+.uppdrag-nav a {
+  font-family: "Alata", sans-serif;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.uppdrag-nav-activ {
+  border-bottom: 3px solid grey;
+}
+
+.uppdrag-nav:hover {
+  border-bottom: 3px solid grey;
+}
+
+/* UPPDRAG WEBB */
+
+.uppdrag {
+  grid-column: 1 / 7;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  row-gap: 80px;
+}
+
+.uppdrag p {
+  font-size: 15px;
+}
+
+.uppdrag section {
+  height: 600px;
+  width: 30%;
+}
+
+.uppdrag-item section {
+  width: 100%;
+}
+
+.uppdrag-webb {
+  grid-row: 3 / 4;
+}
+
+/* UPPDRAG APP */
+
+.uppdrag-app-container {
+  background-color: #f8f6f2;
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1500px 1fr;
+  padding: 80px 0;
+  margin-top: 30px;
+}
+
+.uppdrag-app {
+  grid-column: 2 / 3;
+}
+
+/* UPPDRAG ITEMS */
+
+.uppdrag-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.uppdrag-item-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.uppdrag-item-text {
+  margin-top: 50px;
+}
+
+.uppdrag-sort {
+  height: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-style: bold;
+}
+
+.uppdrag-sort h4 span {
+  background-color: #fea357;
+  padding: 0 10px;
+}
+
+.uppdrag-name {
+  height: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.uppdrag-text {
+  padding: 10px;
+}
+
+/* CONTACT */
+
+.contact-container {
+  grid-column: 2 / 3;
+  display: flex;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  height: auto;
+  width: 70%;
+}
+
+.contact section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 15px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.contact-button {
+  text-align: center;
+}
+
+.contact-button button {
+  margin-top: 50px;
+  color: #2a2a2a;
+  background-color: rgb(255, 255, 255);
+  height: 60px;
+  border: 3px solid #74d6c9;
+}
+
+.contact-button button:hover {
+  background-color: #74d6c9;
+}
