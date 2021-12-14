@@ -10,8 +10,10 @@ MOBILE <768px
 /* 
 --------------------------
  BREDA DESKTOP 1500-1200px
- --------------------------
+--------------------------
  */
+
+/* ----- UPPDRAG ----- */
 
 @media (max-width: 1500px) {
   /* MAIN WIDTH */
@@ -36,7 +38,6 @@ MOBILE <768px
   }
 
   /* UPPDRAG SECTION AND IMG */
-
   .uppdrag-item-img img {
     height: 250px;
   }
@@ -47,15 +48,25 @@ MOBILE <768px
   }
 }
 
+/* ----- UPPDRAG-ONE ----- */
+
+@media (max-width: 1500px) {
+  /* MAIN WIDTH */
+  .uppdrag-container-one {
+    grid-template-columns: 1fr 95% 1fr;
+  }
+}
+
 /* 
 --------------------------
  MINDRE DESKTOP 1200-960px
- --------------------------
+--------------------------
  */
+
+/* ----- UPPDRAG ----- */
 
 @media (max-width: 1200px) {
   /* MAIN WIDTH */
-
   .main-content-container {
     grid-template-rows: 50px 80px auto;
   }
@@ -73,7 +84,6 @@ MOBILE <768px
   }
 
   /* UPPDRAG SECTION AND IMG */
-
   .uppdrag {
     row-gap: 100px;
   }
@@ -107,15 +117,38 @@ MOBILE <768px
   }
 }
 
+/* ----- UPPDRAG-ONE ----- */
+
+@media (max-width: 1200px) {
+  /* MAIN WIDTH */
+  .uppdrag-container-one {
+    grid-template-columns: 1fr 95% 1fr;
+    grid-template-rows: 500px auto auto 500px;
+  }
+
+  /* MAIN CONTENT 1 & 2 */
+  .uppdrag-one-photo {
+    grid-template-rows: repeat(3, 500px);
+  }
+
+  /* RESULT */
+  .photo-3 {
+    padding: 50px;
+    row-gap: 40px;
+  }
+
+  .result-2 p {
+    font-size: 14px;
+  }
+}
+
 /* 
 --------------------------
  TABLETS 960-768px
- --------------------------
+--------------------------
  */
 
 @media (max-width: 960px) {
-  /* MAIN WIDTH */
-
   /* HEADER */
   .uppdrag-header-container {
     height: 520px;
@@ -161,8 +194,6 @@ MOBILE <768px
     margin-top: 0;
   }
 
-  /* APP WIDTH */
-
   /* CONTACT */
   .contact-container {
     height: 400px;
@@ -178,17 +209,76 @@ MOBILE <768px
   }
 }
 
+/* ----- UPPDRAG-ONE ----- */
+
+@media (max-width: 960px) {
+  /* MAIN WIDTH */
+  .uppdrag-container-one {
+    grid-template-columns: 1fr 95% 1fr;
+    grid-template-rows: 400px auto auto 400px;
+  }
+
+  /* MAIN CONTENT 1 & 2 */
+  .uppdrag-one-main-container {
+    flex-direction: column-reverse;
+    grid-column: 1 / 4;
+  }
+
+  .uppdrag-one-main-content-2 {
+    padding: 50px 60px;
+  }
+
+  .uppdrag-one-main-content-1 {
+    background-color: #f8f6f2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .uppdrag-one-main-content-1 section {
+    flex-basis: 48%;
+    text-align: center;
+  }
+
+  /* PHOTO GRID */
+  .uppdrag-one-photo {
+    grid-template-rows: repeat(3, 400px) 1200px;
+  }
+
+  .photo-2 {
+    grid-column: 1 / 7;
+  }
+
+  .photo-3 {
+    grid-column: 1 / 7;
+  }
+
+  .three {
+    grid-column: 1 / 7;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .three section {
+    height: 400px;
+  }
+
+  /* RESULT */
+  .photo-3 {
+    padding: 50px;
+    row-gap: 40px;
+  }
+}
+
 /* 
 --------------------------
  MOBILE <768px
- --------------------------
+--------------------------
  */
 
 @media (max-width: 768px) {
-  /* MAIN WIDTH */
-
   /* HEADER */
-
   .uppdrag-header-container {
     height: auto;
     margin: 50px 0;
@@ -222,7 +312,6 @@ MOBILE <768px
   }
 
   /* UPPDRAG SECTION AND IMG */
-
   .uppdrag {
     justify-content: center;
     row-gap: 80px;
@@ -260,8 +349,6 @@ MOBILE <768px
     margin-bottom: 12px;
   }
 
-  /* APP WIDTH */
-
   /* CONTACT */
   .contact-container {
     height: 600px;
@@ -295,5 +382,55 @@ MOBILE <768px
     align-items: center;
     flex-flow: column nowrap;
     row-gap: 20px;
+  }
+}
+
+/* ----- UPPDRAG-ONE ----- */
+@media (max-width: 768px) {
+  /* MAIN WIDTH */
+  .uppdrag-container-one {
+    grid-template-rows: 500px auto auto 600px;
+  }
+
+  /* MAIN CONTENT 1 & 2 */
+  .uppdrag-one-main-content-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .uppdrag-one-main-content-1 section {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  /* PHOTO GRID */
+  .uppdrag-one-photo {
+    grid-template-rows: repeat(3, 500px) 1500px;
+  }
+
+  .photo-2 {
+    grid-column: 1 / 7;
+  }
+
+  .photo-3 {
+    grid-column: 1 / 7;
+  }
+
+  .three {
+    grid-column: 1 / 7;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .three section {
+    height: 400px;
+  }
+
+  /* RESULT */
+  .photo-3 {
+    padding: 50px;
+    row-gap: 40px;
   }
 }
