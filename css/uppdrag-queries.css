@@ -26,15 +26,9 @@ MOBILE <768px
     height: 640px;
   }
 
-  .header-grey {
-    padding: 30px 30px;
-  }
   .header-grey h1 {
     font-size: 35px;
     margin-bottom: 20px;
-  }
-  .header-grey p {
-    font-size: 14px;
   }
 
   /* UPPDRAG SECTION AND IMG */
@@ -110,21 +104,12 @@ MOBILE <768px
   .uppdrag-app-container {
     margin-top: 50px;
   }
-
-  /* CONTACT */
-  .contact-container {
-    height: 500px;
-  }
 }
 
 /* ----- UPPDRAG-ONE ----- */
 
 @media (max-width: 1200px) {
   /* MAIN WIDTH */
-  .uppdrag-container-one {
-    grid-template-columns: 1fr 95% 1fr;
-    grid-template-rows: 500px auto auto 500px;
-  }
 
   /* MAIN CONTENT 1 & 2 */
   .uppdrag-one-photo {
@@ -195,10 +180,6 @@ MOBILE <768px
   }
 
   /* CONTACT */
-  .contact-container {
-    height: 400px;
-  }
-
   .contact section h2 {
     font-size: 40px;
     margin-bottom: 30px;
@@ -215,7 +196,7 @@ MOBILE <768px
   /* MAIN WIDTH */
   .uppdrag-container-one {
     grid-template-columns: 1fr 95% 1fr;
-    grid-template-rows: 400px auto auto 400px;
+    grid-template-rows: 400px auto auto 500px;
   }
 
   /* MAIN CONTENT 1 & 2 */
@@ -233,6 +214,7 @@ MOBILE <768px
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 20px;
   }
 
   .uppdrag-one-main-content-1 section {
@@ -279,6 +261,10 @@ MOBILE <768px
 
 @media (max-width: 768px) {
   /* HEADER */
+  .uppdrag-container-one {
+    grid-template-rows: 400px auto auto 600px;
+  }
+
   .uppdrag-header-container {
     height: auto;
     margin: 50px 0;
@@ -350,9 +336,6 @@ MOBILE <768px
   }
 
   /* CONTACT */
-  .contact-container {
-    height: 600px;
-  }
 
   .contact section h2 {
     font-size: 40px;

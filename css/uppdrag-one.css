@@ -20,7 +20,6 @@
 
 .uppdrag-one-header-container {
   grid-column: 1 / 4;
-  /* FLEX FOR SHRINK */
   display: flex;
 }
 
@@ -43,6 +42,7 @@
 .uppdrag-one-main-content-1 {
   flex-basis: 30%;
   padding: 65px 50px;
+  background-color: #f8f6f2;
 }
 
 .uppdrag-one-main-content-1 h4 {
@@ -53,6 +53,10 @@
 
 .uppdrag-one-main-content-1 p {
   margin-bottom: 40px;
+}
+
+.tags {
+  font-style: italic;
 }
 
 /* MAIN CONTENT 2 */
