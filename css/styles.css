@@ -198,13 +198,6 @@ a {
   .footer-box-2 {
     width: auto;
   }
-
-  /* .footer-flex-container {
-    width: auto;
-    flex-direction: column;
-  }
-
-   */
 }
 
 @media screen and (max-width: 550px) {

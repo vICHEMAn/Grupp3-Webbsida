@@ -17,10 +17,13 @@
   <body>
     <nav class="header">
       <div class="container container-meny">
-        <a href="#" class="meny-item logo">Logo</a>
-        <a href="#" class="meny-item">Tjänster</a>
-        <a href="#" class="meny-item">Uppdrag</a>
-        <a href="#" class="meny-item">Om företaget</a>
+        <a href="index.html" class="meny-item logo">Velm</a>
+        <a href="tjanster.html" class="meny-item">Tjänster</a>
+        <a href="uppdrag.html" class="meny-item">Uppdrag</a>
+        <a href="foretaget.html" class="meny-item">Om företaget</a>
+        <button class="burger">
+          <img class="burger-icon" src="./img/burger.svg" alt="" />
+        </button>
       </div>
     </nav>
 
@@ -40,7 +43,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="content-container">
       <div class="tjanster-items-container">
         <div class="tjanster-item tjanst-1">
           <h1>Tjänst</h1>
@@ -52,7 +55,7 @@
             ut! Ut, omnis totam.
           </p>
         </div>
-        <img class="tjanster-img-1" src="./images/tjanster-1.jpeg" alt="" />
+        <img class="tjanster-img-1" src="./img/tjanster-1.jpeg" alt="" />
         <div class="tjanster-item tjanst-2">
           <h1>Tjänst</h1>
           <p>
@@ -63,7 +66,7 @@
             ut! Ut, omnis totam.
           </p>
         </div>
-        <img class="tjanster-img-2" src="./images/tjanster-3.jpeg" alt="" />
+        <img class="tjanster-img-2" src="./img/tjanster-2.jpeg" alt="" />
         <div class="tjanster-item tjanst-3">
           <h1>Tjänst</h1>
           <p>
@@ -74,13 +77,13 @@
             ut! Ut, omnis totam.
           </p>
         </div>
-        <img class="tjanster-img-3" src="./images/tjanster-2.jpeg" alt="" />
+        <img class="tjanster-img-3" src="./img/tjanster-3.jpeg" alt="" />
       </div>
     </div>
 
     <footer class="footer">
       <div class="footer-container">
-        <section class="footer-box-1">
+        <section class="footer-box footer-box-1">
           <h4>WEBBYRÅ</h4>
           <p class="footer-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
@@ -90,22 +93,24 @@
             ut! Ut, omnis totam.
           </p>
         </section>
-        <section class="footer-box-2">
-          <h4>KONTAKT</h4>
-          <p class="footer-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-            eligendi?
-          </p>
-        </section>
-        <section class="footer-box-3">
-          <h4>?</h4>
-          <p class="footer-text">
-            ?? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Temporibus, ab?
-          </p>
-        </section>
+        <div class="footer-flex-container">
+          <section class="footer-box footer-box-2">
+            <h4>KONTAKT</h4>
+            <p class="footer-text contact">kontakt@velm.se</p>
+            <p class="footer-text contact">
+              Gatan 10 <br />
+              924 56 Staden
+            </p>
+          </section>
+          <section class="footer-box footer-box-3">
+            <h4>MENY</h4>
+            <a href="tjanster.html" class="footer-text">TJÄNSTER</a>
+            <a href="uppdrag.html" class="footer-text">UPPDRAG</a>
+            <a href="foretaget.html" class="footer-text">OM FÖRETAGET</a>
+          </section>
+        </div>
       </div>
-      <section class="footer-box-4"><p>Copyright grupp3</p></section>
+      <section class="footer-box-4"><p>Copyright Velm 2021</p></section>
     </footer>
   </body>
 </html>
