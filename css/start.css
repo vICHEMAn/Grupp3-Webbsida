@@ -3,6 +3,9 @@
   display: flex;
 }
 
+.container-meny {
+  border-style: solid;
+}
 .rectangle {
     text-align: center;
     border-style: solid;
