@@ -1,19 +1,18 @@
-.header {
-    border: solid;
-  }
-  
-  
-  .rectangle {
+.start-container {
+  padding: 150px;
+  display: flex;
+}
+
+.rectangle {
     text-align: center;
     border-style: solid;
     background-color: lightblue;
     width: 800px;
-    margin: 150px auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    
-    
   }
+  
   .webb-byra {
     color: black;
   }
