@@ -195,11 +195,9 @@
 }
 
 /* CONTACT */
-
 .contact-container {
   grid-column: 2 / 3;
   display: flex;
-  /* height: 600px; */
   height: auto;
   align-items: center;
   justify-content: center;
@@ -208,6 +206,7 @@
 .contact {
   height: auto;
   width: 70%;
+  margin: 100px 0;
 }
 
 .contact section h2 {
