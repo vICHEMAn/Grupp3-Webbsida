@@ -16,13 +16,30 @@
     <title>Velm</title>
   </head>
   <body>
+    <div id="burgare">
+      <button
+        onclick="getElementById('burgare').style.display = 'none'"
+        class="burger-menu-button"
+      >
+        <img class="burger-menu-icon" src="./img/burger.svg" alt="" />
+      </button>
+      <div class="burger-items">
+        <a href="index.html" class="">Velm</a>
+        <a href="tjanster.html" class="">Tjänster</a>
+        <a href="uppdrag.html" class="">Uppdrag</a>
+        <a href="foretaget.html" class="">Om företaget</a>
+      </div>
+    </div>
     <nav class="header">
       <div class="container container-meny">
         <a href="index.html" class="meny-item logo">Velm</a>
         <a href="tjanster.html" class="meny-item">Tjänster</a>
         <a href="uppdrag.html" class="meny-item">Uppdrag</a>
         <a href="foretaget.html" class="meny-item">Om företaget</a>
-        <button class="burger">
+        <button
+          onclick="getElementById('burgare').style.display = 'flex'"
+          class="burger"
+        >
           <img class="burger-icon" src="./img/burger.svg" alt="" />
         </button>
       </div>

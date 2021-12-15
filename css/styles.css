@@ -37,13 +37,48 @@ a {
   align-items: center;
 }
 
+#burgare {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  z-index: 998;
+  background: #2a2a2a;
+}
+
+.burger-items {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-items a {
+  font-family: "Alata", sans-serif;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.burger-menu-button {
+  margin: 10px 10px 0 auto;
+  background: #2a2a2a;
+  border: none;
+}
+
+.burger-menu-icon {
+  filter: invert(100%);
+  width: 25px;
+  height: 25px;
+}
+
 .header {
   width: 100%;
   height: 50px;
   display: flex;
   position: fixed;
   background: #fff;
-  z-index: 999;
+  z-index: 998;
 }
 
 .meny-item {
