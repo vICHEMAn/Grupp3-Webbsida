@@ -180,12 +180,12 @@ MOBILE <768px
   }
 
   /* CONTACT */
-  .contact section h2 {
+  .uppdrag-contact section h2 {
     font-size: 40px;
     margin-bottom: 30px;
   }
 
-  .contact section {
+  .uppdrag-contact section {
     align-self: center;
   }
 }
@@ -337,16 +337,16 @@ MOBILE <768px
 
   /* CONTACT */
 
-  .contact section h2 {
+  .uppdrag-contact section h2 {
     font-size: 40px;
     margin-bottom: 30px;
   }
 
-  .contact p {
+  .uppdrag-contact p {
     font-size: 13px;
   }
 
-  .contact section {
+  .uppdrag-contact section {
     align-self: center;
   }
 
