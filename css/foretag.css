@@ -80,6 +80,7 @@
   padding-bottom: 40px;
   grid-column-start: 2;
   grid-column-end: 7;
+  color: #2a2a2a
 }
 
 .nummer-2 {
@@ -87,18 +88,21 @@
   padding-bottom: 40px;
   grid-column-start: 7;
   grid-column-end: 12;
+  color: #2a2a2a;
 }
 .nummer-3 {
   text-decoration: underline;
   padding-bottom: 40px;
   grid-column-start: 2;
   grid-column-end: 7;
+  color: #2a2a2a;
 }
 .nummer-4 {
   text-decoration: underline;
   padding-bottom: 40px;
   grid-column-start: 7;
   grid-column-end: 12;
+  color: #2a2a2a;
 }
 
 @media screen and (max-width: 1100px) {
