@@ -1,5 +1,6 @@
 .uppdrag-container {
   margin: auto;
+  padding-top: 50px;
 
   display: grid;
   grid-template-columns: 1fr 1500px 1fr;

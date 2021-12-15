@@ -3,6 +3,7 @@
 .uppdrag-container-one {
   /* background-color: rgb(210, 105, 30, 0.4); */
   margin: auto;
+  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1500px 1fr;
   grid-template-rows: 600px auto auto 600px;
