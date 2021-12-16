@@ -105,6 +105,12 @@
   color: #2a2a2a;
 }
 
+a:visited {
+
+  color: #2a2a2a;
+  
+  }
+
 @media screen and (max-width: 1100px) {
   .lina-1 {
     grid-column-start: 3;
