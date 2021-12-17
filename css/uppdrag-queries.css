@@ -13,9 +13,9 @@ MOBILE <768px
 --------------------------
  */
 
-/* ----- UPPDRAG ----- */
+@media (max-width: 1550px) {
+  /* ----- UPPDRAG.HTML ----- */
 
-@media (max-width: 1500px) {
   /* MAIN WIDTH */
   .uppdrag-container {
     grid-template-columns: 1fr 95% 1fr;
@@ -27,7 +27,7 @@ MOBILE <768px
   }
 
   .header-grey h1 {
-    font-size: 35px;
+    font-size: 45px;
     margin-bottom: 20px;
   }
 
@@ -40,11 +40,9 @@ MOBILE <768px
   .uppdrag-app-container {
     grid-template-columns: 1fr 95% 1fr;
   }
-}
 
-/* ----- UPPDRAG-ONE ----- */
+  /* ----- UPPDRAG-ONE.HTML ----- */
 
-@media (max-width: 1500px) {
   /* MAIN WIDTH */
   .uppdrag-container-one {
     grid-template-columns: 1fr 95% 1fr;
@@ -57,9 +55,9 @@ MOBILE <768px
 --------------------------
  */
 
-/* ----- UPPDRAG ----- */
-
 @media (max-width: 1200px) {
+  /* ----- UPPDRAG.HTML ----- */
+
   /* MAIN WIDTH */
   .main-content-container {
     grid-template-rows: 50px 80px auto;
@@ -71,10 +69,10 @@ MOBILE <768px
   }
 
   .header-grey h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .header-grey p {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   /* UPPDRAG SECTION AND IMG */
@@ -104,11 +102,9 @@ MOBILE <768px
   .uppdrag-app-container {
     margin-top: 50px;
   }
-}
 
-/* ----- UPPDRAG-ONE ----- */
+  /* ----- UPPDRAG-ONE.HTML ----- */
 
-@media (max-width: 1200px) {
   /* MAIN WIDTH */
 
   /* MAIN CONTENT 1 & 2 */
@@ -134,13 +130,11 @@ MOBILE <768px
  */
 
 @media (max-width: 960px) {
+  /* ----- UPPDRAG.HTML ----- */
+
   /* HEADER */
   .uppdrag-header-container {
     height: 520px;
-  }
-
-  .header-grey p {
-    font-size: 11px;
   }
 
   .circle {
@@ -188,11 +182,9 @@ MOBILE <768px
   .uppdrag-contact section {
     align-self: center;
   }
-}
 
-/* ----- UPPDRAG-ONE ----- */
+  /* ----- UPPDRAG-ONE.HTML ----- */
 
-@media (max-width: 960px) {
   /* MAIN WIDTH */
   .uppdrag-container-one {
     grid-template-columns: 1fr 95% 1fr;
@@ -259,7 +251,9 @@ MOBILE <768px
 --------------------------
  */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  /* ----- UPPDRAG.HTML ----- */
+
   /* HEADER */
   .uppdrag-container-one {
     grid-template-rows: 400px auto auto 600px;
@@ -268,10 +262,6 @@ MOBILE <768px
   .uppdrag-header-container {
     height: auto;
     margin: 50px 0;
-  }
-
-  .main-content-container {
-    margin-top: 40px;
   }
 
   .uppdrag-header-content {
@@ -288,25 +278,20 @@ MOBILE <768px
   }
 
   .header-grey {
-    padding: 23px 30px;
-  }
-  .header-grey h1 {
-    font-size: 35px;
-  }
-  .header-grey p {
-    font-size: 16px;
+    padding: 70px 0;
+    width: 100%;
+    height: auto;
   }
 
   /* UPPDRAG SECTION AND IMG */
   .uppdrag {
     justify-content: center;
-    row-gap: 80px;
+    row-gap: 60px;
   }
 
   .uppdrag section {
     height: auto;
     padding-bottom: 10px;
-    margin-bottom: 35px;
   }
 
   .uppdrag-item {
@@ -336,7 +321,6 @@ MOBILE <768px
   }
 
   /* CONTACT */
-
   .uppdrag-contact section h2 {
     font-size: 40px;
     margin-bottom: 30px;
@@ -356,7 +340,7 @@ MOBILE <768px
   }
 
   .main-content-container {
-    grid-template-rows: auto 6em auto;
+    grid-template-rows: auto 4em auto;
   }
 
   .main-nav-container {
@@ -366,14 +350,8 @@ MOBILE <768px
     flex-flow: column nowrap;
     row-gap: 20px;
   }
-}
 
-/* ----- UPPDRAG-ONE ----- */
-@media (max-width: 768px) {
-  /* MAIN WIDTH */
-  .uppdrag-container-one {
-    grid-template-rows: 500px auto auto 600px;
-  }
+  /* ----- UPPDRAG-ONE.HTML ----- */
 
   /* MAIN CONTENT 1 & 2 */
   .uppdrag-one-main-content-1 {
@@ -390,6 +368,10 @@ MOBILE <768px
   /* PHOTO GRID */
   .uppdrag-one-photo {
     grid-template-rows: repeat(3, 500px) 1500px;
+  }
+
+  .result-3 P {
+    font-size: 13px;
   }
 
   .photo-2 {
