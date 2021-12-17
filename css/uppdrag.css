@@ -16,7 +16,6 @@
 }
 
 /* HEADER  */
-
 .uppdrag-header-container {
   grid-column: 2 / 3;
   height: 800px;
@@ -30,8 +29,7 @@
 }
 
 /* HEADER FORMS */
-
-.header-img {
+-img {
   grid-column: 4 / 12;
   grid-row: 4 / 16;
   z-index: 2;
@@ -86,7 +84,6 @@
 }
 
 /* MAIN CONTENT */
-
 .main-content-container {
   grid-column: 2 / 3;
   display: grid;
@@ -104,7 +101,6 @@
 }
 
 /* MAIN NAVIGATION */
-
 .uppdrag-nav a {
   font-family: "Alata", sans-serif;
   font-size: 25px;
@@ -120,7 +116,6 @@
 }
 
 /* UPPDRAG WEBB */
-
 .uppdrag {
   grid-column: 1 / 7;
   display: flex;
@@ -147,7 +142,6 @@
 }
 
 /* UPPDRAG APP */
-
 .uppdrag-app-container {
   background-color: #f8f6f2;
   grid-column: 1 / 4;
@@ -162,7 +156,6 @@
 }
 
 /* UPPDRAG ITEMS */
-
 .uppdrag-item {
   display: flex;
   flex-direction: column;
