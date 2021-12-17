@@ -13,9 +13,9 @@ MOBILE <768px
 --------------------------
  */
 
-/* ----- UPPDRAG ----- */
-
 @media (max-width: 1550px) {
+  /* ----- UPPDRAG.HTML ----- */
+
   /* MAIN WIDTH */
   .uppdrag-container {
     grid-template-columns: 1fr 95% 1fr;
@@ -40,11 +40,9 @@ MOBILE <768px
   .uppdrag-app-container {
     grid-template-columns: 1fr 95% 1fr;
   }
-}
 
-/* ----- UPPDRAG-ONE ----- */
+  /* ----- UPPDRAG-ONE.HTML ----- */
 
-@media (max-width: 1500px) {
   /* MAIN WIDTH */
   .uppdrag-container-one {
     grid-template-columns: 1fr 95% 1fr;
@@ -57,9 +55,9 @@ MOBILE <768px
 --------------------------
  */
 
-/* ----- UPPDRAG ----- */
-
 @media (max-width: 1200px) {
+  /* ----- UPPDRAG.HTML ----- */
+
   /* MAIN WIDTH */
   .main-content-container {
     grid-template-rows: 50px 80px auto;
@@ -104,11 +102,9 @@ MOBILE <768px
   .uppdrag-app-container {
     margin-top: 50px;
   }
-}
 
-/* ----- UPPDRAG-ONE ----- */
+  /* ----- UPPDRAG-ONE.HTML ----- */
 
-@media (max-width: 1200px) {
   /* MAIN WIDTH */
 
   /* MAIN CONTENT 1 & 2 */
@@ -134,6 +130,8 @@ MOBILE <768px
  */
 
 @media (max-width: 960px) {
+  /* ----- UPPDRAG.HTML ----- */
+
   /* HEADER */
   .uppdrag-header-container {
     height: 520px;
@@ -184,11 +182,9 @@ MOBILE <768px
   .uppdrag-contact section {
     align-self: center;
   }
-}
 
-/* ----- UPPDRAG-ONE ----- */
+  /* ----- UPPDRAG-ONE.HTML ----- */
 
-@media (max-width: 960px) {
   /* MAIN WIDTH */
   .uppdrag-container-one {
     grid-template-columns: 1fr 95% 1fr;
@@ -256,6 +252,8 @@ MOBILE <768px
  */
 
 @media (max-width: 767px) {
+  /* ----- UPPDRAG.HTML ----- */
+
   /* HEADER */
   .uppdrag-container-one {
     grid-template-rows: 400px auto auto 600px;
@@ -358,10 +356,9 @@ MOBILE <768px
     flex-flow: column nowrap;
     row-gap: 20px;
   }
-}
 
-/* ----- UPPDRAG-ONE ----- */
-@media (max-width: 767px) {
+  /* ----- UPPDRAG-ONE.HTML ----- */
+
   /* MAIN WIDTH */
   .uppdrag-container-one {
     grid-template-rows: 500px auto auto 600px;
@@ -382,6 +379,10 @@ MOBILE <768px
   /* PHOTO GRID */
   .uppdrag-one-photo {
     grid-template-rows: repeat(3, 500px) 1500px;
+  }
+
+  .result-3 P {
+    font-size: 13px;
   }
 
   .photo-2 {
