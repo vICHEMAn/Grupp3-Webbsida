@@ -3,7 +3,8 @@
   padding-top: 50px;
 
   display: grid;
-  grid-template-columns: 1fr 1500px 1fr;
+  /* grid-template-columns: 1fr 1500px 1fr; */
+  grid-template-columns: 1fr minmax(auto, 1500px) 1fr;
 }
 
 * {
@@ -47,7 +48,14 @@
   grid-row: 6 / 14;
   background-color: #f4f4f4;
   z-index: 3;
-  padding: 40px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.header-grey-text-container {
+  width: 80%;
 }
 
 .header-grey h1 {
@@ -59,7 +67,6 @@
 .header-grey p {
   font-size: 20px;
   text-align: center;
-  margin-bottom: 30px;
   font-style: italic;
 }
 
@@ -230,8 +237,9 @@
   color: #2a2a2a;
   background-color: rgb(255, 255, 255);
   height: 60px;
-  width: 150px;
+  width: 160px;
   border: 3px solid #74d6c9;
+  cursor: pointer;
 }
 
 .contact-button button:hover {

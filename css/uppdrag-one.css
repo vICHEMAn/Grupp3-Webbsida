@@ -56,6 +56,10 @@
   margin-bottom: 40px;
 }
 
+.uppdrag-one-main-content-1 a {
+  cursor: pointer;
+}
+
 .tags {
   font-style: italic;
 }
