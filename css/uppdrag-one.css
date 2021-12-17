@@ -60,6 +60,10 @@
   cursor: pointer;
 }
 
+.uppdrag-one-main-content-1 a:hover {
+  color: #fea357;
+}
+
 .tags {
   font-style: italic;
 }
