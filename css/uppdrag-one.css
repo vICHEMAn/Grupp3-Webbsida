@@ -105,8 +105,16 @@
   grid-column: 1 / 7;
 }
 
+.photo-1 img {
+  object-position: top;
+}
+
 .photo-2 {
   grid-column: 1 / 4;
+}
+
+.photo-2 img {
+  object-position: left;
 }
 
 .photo-3 {

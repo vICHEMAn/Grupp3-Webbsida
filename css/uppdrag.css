@@ -29,7 +29,7 @@
 }
 
 /* HEADER FORMS */
--img {
+.header-img {
   grid-column: 4 / 12;
   grid-row: 4 / 16;
   z-index: 2;
